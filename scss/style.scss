@@ -1,0 +1,10 @@
+@import 'reset';
+@import 'ux';
+@import 'header';
+@import 'index';
+@import 'footer';
+@media (min-width: 1290px) {
+    .container {
+        width: 1260px;
+    }
+}

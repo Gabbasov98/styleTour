@@ -1,0 +1,70 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.btn-red {
+  background-color: #d51e08;
+  color: #ffffff; }
+  .btn-red:hover {
+    background-color: #a41706;
+    color: #fff; }
+  .btn-red:active {
+    background-color: #731004;
+    color: #fff; }
+
+.card {
+  background-color: #fff;
+  padding: 16px 15px 28px;
+  text-align: center;
+  transition: all .3s; }
+  .card:hover {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5); }
+    .card:hover .card__btn {
+      background-color: #ececec;
+      box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75); }
+  .card__img {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .card__img img {
+      max-height: 100%;
+      max-width: 100%; }
+  .card__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px; }
+  .card__desc {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 13px;
+    height: 34px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding: 0 15px; }
+  .card__price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d51e08;
+    margin-top: 12px; }
+  .card__btn {
+    margin: 29px auto 0;
+    width: 139px;
+    height: 39px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000; }
+
+@media screen and (max-width: 1200px) {
+  .card__img {
+    height: 175px; }
+  .card__desc {
+    padding: 0; } }
+
+/*# sourceMappingURL=ux.css.map */

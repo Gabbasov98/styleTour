@@ -1,0 +1,108 @@
+.footer {
+    &__col {
+        width: 165px;
+    }
+    &__title {
+        font-size: 14.1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+    &__link {
+        font-size: 14.1px;
+        line-height: 24px;
+        display: block;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__socials {
+        display: flex;
+        &-item {
+            width: 48px;
+            display: block;
+            &:hover {
+                opacity: 0.9;
+            }
+            &:not(:last-child) {
+                margin-right: 9px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__privacy {
+        font-size: 14px;
+    }
+    &__pay {
+        display: flex;
+        align-items: center;
+        &-item {
+            width: 60px;
+            &:not(:last-child) {
+                margin-right: 6px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.footer-top {
+    background-color: #343434;
+    padding: 35px 0;
+    color: #c8c8c8;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-bottom {
+    &__inner {
+        padding: 28px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        text-align: center;
+        &__title {
+            margin: 20px 0;
+        }
+        &__col {
+            width: 100%;
+        }
+        &__link {
+            margin-bottom: 5px;
+        }
+        &__socials {
+            justify-content: center;
+        }
+        &__pay {
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            &-item {
+                margin-top: 10px;
+            }
+        }
+    }
+    .footer-top {
+        padding: 15px 0 25px;
+        &__inner {
+            display: block;
+        }
+    }
+    .footer-bottom {
+        &__inner {
+            display: block;
+        }
+    }
+}
